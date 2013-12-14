@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facebooksms>
+
+<patterngroup name="STATUS" locale="EN">
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? status[\.:]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?)'s status:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) updated (?&lt;RECEIVER&gt;.*?)(?:'s)? status.:\s?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
+<patterngroup name="MESSAGE" locale="EN">
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) to (?&lt;RECEIVER&gt;you):\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
+<patterngroup name="WALLPOST" locale="EN">
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) on (?&lt;RECEIVER&gt;.*?)(?:'s)? wall:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared something on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) posted: (?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? [Ww]all post:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? post[:\.]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
+<patterngroup name="LINK" locale="EN">
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a link (?&lt;RECEIVER&gt;.*?) shared.\s?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? link:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
+<patterngroup name="PHOTO" locale="EN">
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) has added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
+<valuegroup name="THEIRS" locale="EN">
+<value>HIS</value>
+<value>HER</value>
+<value>THEIR</value>
+</valuegroup>
+
+<valuegroup name="OURS" locale="EN">
+<value>YOU</value>
+<value>YOUR</value>
+</valuegroup>
+
+</facebooksms>

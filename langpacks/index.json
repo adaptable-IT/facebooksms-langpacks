@@ -1,0 +1,12 @@
+{
+  "minAppVersion": 17,
+  "latestAppVersion": 17,
+  "langPacks": [
+    {
+      "langCode": "en",
+      "name": "English",
+      "version": 1,
+      "path": "en/en.xml"
+    }
+  ]
+}
