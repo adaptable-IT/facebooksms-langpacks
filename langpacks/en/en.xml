@@ -29,6 +29,7 @@
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) has added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo (?&lt;RECEIVER&gt;.*?) shared\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
