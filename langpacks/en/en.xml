@@ -5,6 +5,7 @@
 <pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? status[\.:]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?)'s status:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) updated (?&lt;RECEIVER&gt;.*?)(?:'s)? status\.?:\s?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) replied to your comment on (?&lt;RECEIVER&gt;.*?)(?:'s)? status\.\n(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
 <patterngroup name="MESSAGE" locale="EN">
