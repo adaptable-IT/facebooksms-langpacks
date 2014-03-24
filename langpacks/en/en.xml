@@ -32,6 +32,7 @@
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a photo (?&lt;RECEIVER&gt;.*?) shared\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on (?:his|her|their) photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
 <valuegroup name="THEIRS" locale="EN">
