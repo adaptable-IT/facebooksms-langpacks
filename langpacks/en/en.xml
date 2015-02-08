@@ -14,6 +14,18 @@
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) to (?&lt;RECEIVER&gt;you):\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
+<patterngroup name="PHOTO" locale="EN">
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) has added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a new photo (?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) posted a photo on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo (?&lt;RECEIVER&gt;.*?) shared\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on (?:his|her|their) photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+</patterngroup>
+
 <patterngroup name="WALLPOST" locale="EN">
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) on (?&lt;RECEIVER&gt;.*?)(?:'s)? wall:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared something on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline.\n{0,2}(?&lt;MESSAGE&gt;.*)$</pattern>
@@ -34,17 +46,6 @@
 
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a link (?&lt;RECEIVER&gt;.*?) shared\.\s?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? link[\.:]\n{0,2}(?&lt;MESSAGE&gt;.*)$</pattern>
-</patterngroup>
-
-<patterngroup name="PHOTO" locale="EN">
-<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) has added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a new photo (?&lt;MESSAGE&gt;.*)$</pattern>
- 
-<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern>^(?&lt;SENDER&gt;.*?) commented on a photo (?&lt;RECEIVER&gt;.*?) shared\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern>^(?&lt;SENDER&gt;.*?) commented on (?:his|her|their) photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
 <valuegroup name="THEIRS" locale="EN">
