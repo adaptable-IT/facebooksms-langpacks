@@ -4,8 +4,10 @@
 <patterngroup name="STATUS" locale="EN">
 <pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? status[\.:]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?)'s status:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) updated (?&lt;RECEIVER&gt;.*?)(?:'s)? status\.?:\s?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) updated (?&lt;RECEIVER&gt;.*?)(?:'s)? status(\.?:|\.)\s?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) replied to your comment on (?&lt;RECEIVER&gt;.*?)(?:'s)? status\.\n(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a status (?&lt;RECEIVER&gt;.*?) shared.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+
 </patterngroup>
 
 <patterngroup name="MESSAGE" locale="EN">
@@ -14,24 +16,34 @@
 
 <patterngroup name="WALLPOST" locale="EN">
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) on (?&lt;RECEIVER&gt;.*?)(?:'s)? wall:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared something on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared something on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline.\n{0,2}(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared moments from (?&lt;RECEIVER&gt;.*?) year. (?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) on (?&lt;RECEIVER&gt;.*?)(?:'s)? timeline:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) posted: (?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) tagged (?&lt;RECEIVER&gt;you) in a post\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+
 <pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? [Ww]all post:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? post[:\.]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? video[:\.]\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) commented on a video (?&lt;RECEIVER&gt;.*?) shared\.\n{0,2}(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
 <patterngroup name="LINK" locale="EN">
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) shared a link[\.:] (?&lt;MESSAGE&gt;.*)$</pattern>
+
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a link (?&lt;RECEIVER&gt;.*?) shared\.\s?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? link:\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? link[\.:]\n{0,2}(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
 <patterngroup name="PHOTO" locale="EN">
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) has added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a photo of (?&lt;RECEIVER&gt;.*?) on Facebook\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern newtopic="true">^(?&lt;SENDER&gt;.*?) added a new photo (?&lt;MESSAGE&gt;.*)$</pattern>
+ 
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on a photo (?&lt;RECEIVER&gt;.*?) shared\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
-<pattern>^(?&lt;SENDER&gt;.*?) commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
+<pattern>^(?&lt;SENDER&gt;.*?) (?:also )?commented on (?&lt;RECEIVER&gt;.*?)(?:'s)? photo\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 <pattern>^(?&lt;SENDER&gt;.*?) commented on (?:his|her|their) photo of (?&lt;RECEIVER&gt;.*?)\.\n?(?&lt;MESSAGE&gt;.*)$</pattern>
 </patterngroup>
 
